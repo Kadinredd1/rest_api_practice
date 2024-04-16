@@ -50,7 +50,7 @@ app.post('/quotes', (req, res) => {
     
 });
 
-app.put('quotes/:id', async (req, res) => {
+app.put('/quotes/:id', async (req, res) => {
     try{
       const quote = await records.getQuote(req.params.id);
       if (quote){
@@ -62,13 +62,26 @@ app.put('quotes/:id', async (req, res) => {
       } else {
         res.status(404).json({message: 'Not found'})
       }
-
     }catch(err){
         res.status(500).json({message: "There was an unexpected error"})
     }
 });
 
+app.delete("/quotes/:id", async (req, res) => {
+  try{
+    const quote = await records.getQuote(req.params.id);
+    await records.deleteQuote(quote);
+   res.status(204).end();
+  }catch(err){
+      res.status(500).json({message: "There was an unexpected error"})
+  }
+});
+
+app.use( (err, req, res, next) => {
+    
+})
+
 
 app.listen(3000, () => console.log('Quote API listening on port 3000!'));
 
-
+//annon
