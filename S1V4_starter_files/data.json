@@ -17,21 +17,52 @@
     },
     {
       "quote": {
-        "id": 4432,
-        "quote": "I'm only here so I dont get fined",
-        "author": "Marshawn Lynch"
+        "quote": "I want to test something",
+        "author": "Kadin"
       },
-      "author": "Marshawn Lynch",
-      "id": 5728
+      "author": "Kadin",
+      "id": 5434
     },
     {
       "quote": {
-        "id": 4432,
-        "quote": "I'm only here so I dont get fined",
-        "author": "Marshawn Lynch"
+        "quote": "I want to test something",
+        "author": "Kadin"
       },
-      "author": "Marshawn Lynch",
-      "id": 3692
+      "author": "Kadin",
+      "id": 8730
+    },
+    {
+      "id": 5464,
+      "quote": "this is a different test for id 5646",
+      "author": "someone else"
+    },
+    {
+      "quote": "test for new quotes being created",
+      "author": "someone to exist jr.",
+      "id": 8201
+    },
+    {
+      "quote": {
+        "quote": "test for new quotes being created",
+        "author": "someone to exist jr. for another jr."
+      },
+      "author": "someone to exist jr. for another jr.",
+      "id": 1967
+    },
+    {
+      "quote": "test for new quotes being created",
+      "author": "someone to exist jr. for another jr.",
+      "id": 9246
+    },
+    {
+      "quote": "test",
+      "author": "test",
+      "id": 1099
+    },
+    {
+      "quote": "test",
+      "author": "test",
+      "id": 2856
     }
   ]
 }

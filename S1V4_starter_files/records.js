@@ -63,6 +63,15 @@ async function createQuote(newRecord) {
   await save(quotes); 
   return newRecord; 
 }
+// function Validation(phoneNumber) {
+//   if (!phoneNumber || typeof phoneNumber !== "string" || phoneNumber.length !== 10 || !/^\d{10}$/.test(phoneNumber)) {
+//     return false;
+//   }
+//   return true;
+// }
+
+// module.exports = { Validation };
+
 
 /**
  * Updates a single record 
@@ -74,7 +83,6 @@ async function updateQuote(newQuote){
   
   quote.quote = newQuote.quote;
   quote.author = newQuote.author;
-  quote.year = newQuote.year;
  
   await save(quotes);
 }
